@@ -4,35 +4,42 @@ body {
   font-family: 'Tahoma', sans-serif;
   background-color: #f4f4f4;
 }
-.slider-logo-title{
+
+.title{
   display: flex;
-flex-direction: column;
-
-
+  justify-content: space-between;
 }
-.slaider{
-  width: 70%;
-  height: 300px;
-  display: flex;
 
-  
-}
 .img-slider{
   border-radius: 2rem;
   width: 100%;
   height: 100%;
 }
-.title{
+.title-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
   display: flex;
   align-items: center;
-  
-  
 }
 .icon-container{
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin: 2rem;
 }
 .icon{
   width: 35px;
+}
+
+.slaider{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.img-slider{
+  width: 70%;
 }
