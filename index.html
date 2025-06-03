@@ -14,22 +14,33 @@
                 <img src="./image/logo.png" alt="logo" style="width: 120px;">
                 <h1>فوتوپلاس</h1>        
             </div>
+
+            <ul class="nav">
+                <li><a href="#gallery">گالری</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+
+
             <div class="login">
-                <button>log in</button>
-                <button>log in</button>
+
+                    <button class="button-login"> <img src="./icon/login.svg" alt="" style="width: 20px;margin-left: 5px;">log in</button>
             </div>
         </div>
         <div class="icon-container">
-            <img class="icon" src="./icon/car.jpeg" alt="ماشین">
-            <img class="icon" src="./icon/animal.svg" alt="حیوانات">
-            <img class="icon" src="./icon/city.svg" alt="شهر و معماری">
-            <img class="icon" src="./icon/Design.svg" alt="هنر و طراحی">
-            <img class="icon" src="./icon/food.svg" alt="غذا و نوشیدنی">
-            <img class="icon" src="./icon/portre.svg" alt="پرتره">
-            <img class="icon" src="./icon/sky.svg" alt="آسمان">
-            <img class="icon" src="./icon/tecnology.svg" alt="تکنولوژی">
-            <img class="icon" src="./icon/tower.svg" alt="مکان های دیدن">
-            <img class="icon" src="./icon/tree.svg" alt="طبیعت">
+            <img class="icon" src="./icon/car.jpeg" alt="ماشین" data-tooltip=" ماشین">
+            <img class="icon" src="./icon/animal.svg" alt="حیوانات" data-tooltip=" حیوانات">
+            <img class="icon" src="./icon/city.svg" alt="شهر و معماری" data-tooltip=" شهر و معماری">
+            <img class="icon" src="./icon/Design.svg" alt="هنر و طراحی" data-tooltip=" هنری و طراحی">
+            <img class="icon" src="./icon/food.svg" alt="غذا و نوشیدنی" data-tooltip=" غذا و نوشیدنی">
+            <img class="icon" src="./icon/portre.svg" alt="پرتره" data-tooltip=" پرتره">
+            <img class="icon" src="./icon/sky.svg" alt="آسمان" data-tooltip=" آسمان">
+            <img class="icon" src="./icon/tecnology.svg" alt="تکنولوژی" data-tooltip=" تکنولوژی">
+            <img class="icon" src="./icon/tower.svg" alt="مکان های دیدن" data-tooltip=" اماکن دیدنی">
+            <img class="icon" src="./icon/tree.svg" alt="طبیعت" data-tooltip=" طبیعت">
+
+            <div id="tooltip" class="tooltip"></div>
+
         </div>
         
         <div class="slaider">
