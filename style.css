@@ -151,7 +151,9 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.slider-item{
+  width: 50%;
+}
 .img-slider {
   width: 100%;
   position: relative;

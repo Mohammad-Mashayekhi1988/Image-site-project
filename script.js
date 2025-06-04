@@ -21,11 +21,30 @@ document.querySelectorAll(".icon").forEach(icon => {
   });
 });
 
-let slider=document.querySelector('img-slider')
+// slider
 
-let arraySlider =  ["image/slider/1.webp", "image/slider/2.jpg","image/slider/3.jpeg", "image/slider/4.webp", "image/slider/5.jpg", "image/slider/6.jpg", "image/slider/7.jpg", "image/slider/8.jpeg", "image/slider/9.jpg", "image/slider/10.jpg", "image/slider/11.jpg", "image/slider/12.jpg", ]
+let img=document.querySelector('.img-slider')
+let nextElem = document.querySelector('.next')
+let prevElem = document.querySelector('.prev')
 
+let arraySlider =  ["image/slider/1.png", "image/slider/2.jpg","image/slider/3.jpeg", "image/slider/4.webp", "image/slider/5.jpg", "image/slider/6.jpg", "image/slider/7.jpg", "image/slider/8.jpeg", "image/slider/9.jpg", "image/slider/10.jpg", "image/slider/11.jpg", "image/slider/12.jpg", ]
 
+let index = 0;
+function next() {
+  index--;
+  if (index<0) {
+    index = arraySlider.length -1;
+  }
+  img.setAttribute('src',arraySlider[index])
+}
 
-
-
+function prev() {
+  index++;
+  if (index>arraySlider.length-1) {
+    index = 0;
+  }
+  img.setAttribute('src',arraySlider[index])
+}
+nextElem.addEventListener('click',next)
+prevElem.addEventListener('click',prev)
+setInterval(next , 3000)
