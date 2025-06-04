@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فوتوپلاس</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
     <header>
-
         <div class="title">
             <div class="title-logo">
                 <img src="./image/logo.png" alt="logo" style="width: 120px;">
-                <h1>فوتوپلاس</h1>        
+                <h1>فوتوپلاس</h1>
             </div>
 
             <ul class="nav">
@@ -20,12 +22,18 @@
                 <li><a href="#about">درباره ما</a></li>
                 <li><a href="#contact">تماس با ما</a></li>
             </ul>
-
-
             <div class="login">
 
-                    <button class="button-login"> <img src="./icon/login.svg" alt="" style="width: 20px;margin-left: 5px;">log in</button>
+                <button class="button-login"> <img src="./icon/login.svg" alt=""
+                        style="width: 20px;margin-left: 5px;">log in</button>
             </div>
+
+            
+            
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="جستجوی عکس...">
+            <button><img src="./icon/search.svg" alt="search" style="width: 20px;"></button>
         </div>
         <div class="icon-container">
             <img class="icon" src="./icon/car.jpeg" alt="ماشین" data-tooltip=" ماشین">
@@ -42,13 +50,28 @@
             <div id="tooltip" class="tooltip"></div>
 
         </div>
-        
+
         <div class="slaider">
-            <img class="img-slider" src="./image/slider/10.jpg" alt="">
+            <div class="slider-item active">
+                <img class="img-slider" src="./image/slider/10.jpg" alt="">
+            </div>
+            <img class="prev" src="./icon/pointer-left.svg" alt="">
+            <img class="next" src="./icon/pointer-right.svg" alt="">
         </div>
     </header>
 
-
+    <main class="main">
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+        <div class="main-box-picture"></div>
+    </main>
 
 
 
@@ -56,4 +79,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
