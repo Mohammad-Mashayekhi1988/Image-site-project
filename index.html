@@ -2,82 +2,234 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فوتوپلاس</title>
-    <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فوتوپلاس</title>
+<link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <div class="title-logo">
-                <img src="./image/logo.png" alt="logo" style="width: 120px;">
-                <h1>فوتوپلاس</h1>
-            </div>
+<header>
+<div class="title">
+<div class="title-logo">
+<img src="./image/logo.png" alt="logo" style="width: 120px;">
+<h1>فوتوپلاس</h1>
+</div>
 
-            <ul class="nav">
-                <li><a href="#gallery">گالری</a></li>
-                <li><a href="#about">درباره ما</a></li>
-                <li><a href="#contact">تماس با ما</a></li>
-            </ul>
-            <div class="login">
+<ul class="nav">
+<li><a href="#contact">صفحه اصلی</a></li>
+<li><a href="#gallery">گالری</a></li>
+<li><a href="#about">درباره ما</a></li>
+<li><a href="#contact">تماس با ما</a></li>
+</ul>
+<div class="login">
 
-                <button class="button-login"> <img src="./icon/login.svg" alt=""
-                        style="width: 20px;margin-left: 5px;">log in</button>
-            </div>
-
-            
-            
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="جستجوی عکس...">
-            <button><img src="./icon/search.svg" alt="search" style="width: 20px;"></button>
-        </div>
-        <div class="icon-container">
-            <img class="icon" src="./icon/car.jpeg" alt="ماشین" data-tooltip=" ماشین">
-            <img class="icon" src="./icon/animal.svg" alt="حیوانات" data-tooltip=" حیوانات">
-            <img class="icon" src="./icon/city.svg" alt="شهر و معماری" data-tooltip=" شهر و معماری">
-            <img class="icon" src="./icon/Design.svg" alt="هنر و طراحی" data-tooltip=" هنری و طراحی">
-            <img class="icon" src="./icon/food.svg" alt="غذا و نوشیدنی" data-tooltip=" غذا و نوشیدنی">
-            <img class="icon" src="./icon/portre.svg" alt="پرتره" data-tooltip=" پرتره">
-            <img class="icon" src="./icon/sky.svg" alt="آسمان" data-tooltip=" آسمان">
-            <img class="icon" src="./icon/tecnology.svg" alt="تکنولوژی" data-tooltip=" تکنولوژی">
-            <img class="icon" src="./icon/tower.svg" alt="مکان های دیدن" data-tooltip=" اماکن دیدنی">
-            <img class="icon" src="./icon/tree.svg" alt="طبیعت" data-tooltip=" طبیعت">
-
-            <div id="tooltip" class="tooltip"></div>
-
-        </div>
-
-        <div class="slaider">
-            <div class="slider-item">
-                <img class="img-slider" src="./image/slider/10.jpg" alt="">
-            </div>
-            <img class="prev" src="./icon/pointer-left.svg" alt="">
-            <img class="next" src="./icon/pointer-right.svg" alt="">
-        </div>
-    </header>
-
-    <main class="main">
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-        <div class="main-box-picture"></div>
-    </main>
+<button class="button-login"> <img src="./icon/login.svg" alt=""
+style="width: 20px;margin-left: 5px;">log in</button>
+</div>
 
 
+</div>
+<div class="search-bar">
+<input type="text" placeholder="جستجوی عکس...">
+<button><img src="./icon/search.svg" alt="search" style="width: 20px;"></button>
+</div>
+<div class="icon-container">
+<img class="icon" src="./icon/car.jpeg" alt="ماشین" data-tooltip=" ماشین">
+<img class="icon" src="./icon/animal.svg" alt="حیوانات" data-tooltip=" حیوانات">
+<img class="icon" src="./icon/city.svg" alt="شهر و معماری" data-tooltip=" شهر و معماری">
+<img class="icon" src="./icon/Design.svg" alt="هنر و طراحی" data-tooltip=" هنری و طراحی">
+<img class="icon" src="./icon/food.svg" alt="غذا و نوشیدنی" data-tooltip=" غذا و نوشیدنی">
+<img class="icon" src="./icon/portre.svg" alt="پرتره" data-tooltip=" پرتره">
+<img class="icon" src="./icon/sky.svg" alt="آسمان" data-tooltip=" آسمان">
+<img class="icon" src="./icon/tecnology.svg" alt="تکنولوژی" data-tooltip=" تکنولوژی">
+<img class="icon" src="./icon/tower.svg" alt="مکان های دیدن" data-tooltip=" اماکن دیدنی">
+<img class="icon" src="./icon/tree.svg" alt="طبیعت" data-tooltip=" طبیعت">
 
+<div id="tooltip" class="tooltip"></div>
 
+</div>
 
-    <script src="./script.js"></script>
+<div class="slaider">
+<div class="slider-item">
+<img class="img-slider" src="./image/slider/10.jpg" alt="">
+</div>
+<img class="prev" src="./icon/pointer-left.svg" alt="">
+<img class="next" src="./icon/pointer-right.svg" alt="">
+</div>
+</header>
+
+<main class="main">
+
+<div class="flex">
+<div class="card animal">
+<p class="text">حیوانات</p>
+<div class="images" style="display: none; ">
+<img src="./image/gallery/animals/1.jpg " alt="">
+<img src="./image/gallery/animals/2.jpg " alt="">
+<img src="./image/gallery/animals/3.jpg " alt="">
+<img src="./image/gallery/animals/4.jpg " alt="">
+<img src="./image/gallery/animals/5.jpg " alt="">
+<img src="./image/gallery/animals/6.jpeg " alt="">
+<img src="./image/gallery/animals/7.jpg " alt="">
+<img src="./image/gallery/animals/8.jpg " alt="">
+<img src="./image/gallery/animals/9.jpg " alt="">
+<img src="./image/gallery/animals/10.jpg " alt="">
+</div>
+</div>
+
+<div class="card car">
+<p class="text">ماشین</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/car/1.jpg" alt="">
+<img src="./image/gallery/car/2.png" alt="">
+<img src="./image/gallery/car/3.png" alt="">
+<img src="./image/gallery/car/4.jpg" alt="">
+<img src="./image/gallery/car/5.jpg" alt="">
+<img src="./image/gallery/car/6.jpg" alt="">
+<img src="./image/gallery/car/7.jpg" alt="">
+<img src="./image/gallery/car/8.jpeg" alt="">
+<img src="./image/gallery/car/9.jpg" alt="">
+<img src="./image/gallery/car/10.jpg" alt="">
+</div>
+<!-- <label for="">ffffffffff</label> -->
+</div>
+<div class="card Architecture">
+<p class="text">شهرومعماری</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Architecture/1.jpg" alt="">
+<img src="./image/gallery/Architecture/2.jpeg" alt="">
+<img src="./image/gallery/Architecture/3.webp" alt="">
+<img src="./image/gallery/Architecture/4.webp" alt="">
+<img src="./image/gallery/Architecture/5.webp" alt="">
+<img src="./image/gallery/Architecture/6.jpg" alt="">
+<img src="./image/gallery/Architecture/7.webp" alt="">
+<img src="./image/gallery/Architecture/8.webp" alt="">
+<img src="./image/gallery/Architecture/9.webp" alt="">
+<img src="./image/gallery/Architecture/10.jpg" alt="">
+</div>
+</div>
+<div class="card Design">
+<p class="text">طراحی </p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Design/1.jpg" alt="">
+<img src="./image/gallery/Design/2.jpg" alt="">
+<img src="./image/gallery/Design/3.jpg" alt="">
+<img src="./image/gallery/Design/4.jpeg" alt="">
+<img src="./image/gallery/Design/5.jpg" alt="">
+<img src="./image/gallery/Design/6.jpg" alt="">
+<img src="./image/gallery/Design/7.jpg" alt="">
+<img src="./image/gallery/Design/8.jpg" alt="">
+<img src="./image/gallery/Design/9.webp" alt="">
+<img src="./image/gallery/Design/10.jpg" alt="">
+</div>
+</div>
+<div class="card food">
+<p class="text">غذا ونوشیدنی</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Food&drink/1.jpg" alt="">
+<img src="./image/gallery/Food&drink/2.jpg" alt="">
+<img src="./image/gallery/Food&drink/3.webp" alt="">
+<img src="./image/gallery/Food&drink/4.jpg" alt="">
+<img src="./image/gallery/Food&drink/5.jpg" alt="">
+<img src="./image/gallery/Food&drink/6.jpg" alt="">
+<img src="./image/gallery/Food&drink/7.jpg" alt="">
+<img src="./image/gallery/Food&drink/8.jpg" alt="">
+<img src="./image/gallery/Food&drink/9.png" alt="">
+<img src="./image/gallery/Food&drink/10.jpg" alt="">
+</div>
+</div>
+<div class="card Portrait">
+<p class="text">پرتره</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Portrait/1.jpg" alt="">
+<img src="./image/gallery/Portrait/2.jpg" alt="">
+<img src="./image/gallery/Portrait/3.jpg" alt="">
+<img src="./image/gallery/Portrait/4.jpg" alt="">
+<img src="./image/gallery/Portrait/5.jpg" alt="">
+<img src="./image/gallery/Portrait/6.jpg" alt="">
+<img src="./image/gallery/Portrait/7.jpg" alt="">
+<img src="./image/gallery/Portrait/8.jpg" alt="">
+<img src="./image/gallery/Portrait/9.jpg" alt="">
+<img src="./image/gallery/Portrait/10.jpg" alt="">
+</div>
+</div>
+<div class="card sky">
+<p class="text">آسمان</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/sky/1.jpg" alt="">
+<img src="./image/gallery/sky/2.jpg" alt="">
+<img src="./image/gallery/sky/3.jpg" alt="">
+<img src="./image/gallery/sky/4.jpg" alt="">
+<img src="./image/gallery/sky/5.jpg" alt="">
+<img src="./image/gallery/sky/6.jpg" alt="">
+<img src="./image/gallery/sky/7.jpeg" alt="">
+<img src="./image/gallery/sky/8.jpg" alt="">
+<img src="./image/gallery/sky/9.webp" alt="">
+<img src="./image/gallery/sky/10.jpg" alt="">
+</div>
+</div>
+<div class="card Technology">
+<p class="text">تکنولوژی</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Technology/1.jpeg" alt="">
+<img src="./image/gallery/Technology/2.jpg" alt="">
+<img src="./image/gallery/Technology/3.jpeg" alt="">
+<img src="./image/gallery/Technology/4.jpg" alt="">
+<img src="./image/gallery/Technology/5.jpg" alt="">
+<img src="./image/gallery/Technology/6.jpeg" alt="">
+<img src="./image/gallery/Technology/7.jpeg" alt="">
+<img src="./image/gallery/Technology/8.jpg" alt="">
+<img src="./image/gallery/Technology/9.webp" alt="">
+<img src="./image/gallery/Technology/10.webp" alt="">
+</div>
+</div>
+<div class="card Places">
+<p class="text">اماکن دیدنی</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Places/1.webp" alt="">
+<img src="./image/gallery/Places/2.jpg" alt="">
+<img src="./image/gallery/Places/3.jpg" alt="">
+<img src="./image/gallery/Places/4.jpg" alt="">
+<img src="./image/gallery/Places/5.jpg" alt="">
+<img src="./image/gallery/Places/6.jpg" alt="">
+<img src="./image/gallery/Places/7.jpg" alt="">
+<img src="./image/gallery/Places/8.jpg" alt="">
+<img src="./image/gallery/Places/9.jpeg" alt="">
+<img src="./image/gallery/Places/10.jpg" alt="">
+</div>
+</div>
+<div class="card Nature">
+<p class="text">طبیعت</p>
+<div class="images" style="display: none;">
+<img src="./image/gallery/Nature/1.jpg" alt="">
+<img src="./image/gallery/Nature/2.jpg" alt="">
+<img src="./image/gallery/Nature/3.jpg" alt="">
+<img src="./image/gallery/Nature/4.jpeg" alt="">
+<img src="./image/gallery/Nature/5.webp" alt="">
+<img src="./image/gallery/Nature/6.jpg" alt="">
+<img src="./image/gallery/Nature/7.jpg" alt="">
+<img src="./image/gallery/Nature/8.jpeg" alt="">
+<img src="./image/gallery/Nature/9.webp" alt="">
+<img src="./image/gallery/Nature/10.jpg" alt="">
+</div>
+</div>
+</div>
+
+<!-- مودال -->
+<div id="modal" class="modal hidden">
+<span id="closeBtn" class="close">&#10007;</span>
+<img id="modalImg" class="modal-img" src="" alt="">
+<div class="modal-nav">
+<button id="prevBtn">&#171;</button>
+<button id="nextBtn">&#187;</button>
+</div>
+</div>
+
+</main>
+
+<script src="./script.js"></script>
 </body>
 
 </html>
