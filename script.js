@@ -7,7 +7,7 @@ icon.addEventListener("mouseenter", () => {
 const text = icon.getAttribute("data-tooltip");
 tooltip.textContent = text;
 tooltip.style.opacity = 1;
-tooltip.style.transform = "translate(-50%, -200%) scale(0.95)"; // top
+tooltip.style.transform = "translate(-50%, -130%) scale(0.95)"; // top
 });
 
 icon.addEventListener("mousemove", (e) => {
@@ -92,3 +92,23 @@ function showModalImage() {
 modalImg.src = currentImages[currentIndex];
 }
 
+// darkmode
+
+let darkMode=document.querySelector('.dark-mode')
+let change = document.querySelector('.change-dark-mode')
+darkMode.addEventListener('click',()=>{
+    document.body.classList.toggle('dark')
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('mode','dark')
+        change.classList.add('chang-dark')
+    }else{
+        localStorage.setItem('mode','light')
+        change.classList.remove('chang-dark')
+    }
+})
+window.onload = ()=>{
+    let mode = localStorage.getItem('mode')
+    if (mode=== 'dark') {
+        document.body.classList.add('dark')
+    }
+}

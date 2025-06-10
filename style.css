@@ -10,6 +10,57 @@ background-color: #f4f4f4;
 margin: 0;
 }
 
+/* dark mode */
+.dark-mode{
+position: relative;
+    width: 60px;
+    height: 35px;
+    right: 37px;
+    top: 12px;
+    background-color: #2b67c9;
+    border-radius: 20px;
+}
+
+.moon,
+.sun{
+    position: absolute;
+
+    cursor: pointer;
+}
+.moon{
+    right: 5px;
+    top: 7px;
+}
+.sun{
+    right: 32px;
+    top: 7px;
+}
+.change-dark-mode{
+    background-color: #383636;
+    border-radius: 100%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 2px;
+    z-index: 2;
+}
+.chang-dark{
+    background-color: #383636;
+    border-radius: 100%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 2px;
+    z-index: 2;
+    left: 2px ;
+}
+.dark{
+    background-color: #383636;
+}
+.dark * {
+    color: #ccc !important;
+}
+
 /* HEADER */
 .title {
 display: flex;
@@ -281,8 +332,8 @@ box-shadow: 0 0 10px black;
 margin-top: 20px;
 }
 
-.modal-nav button {
-background: white;
+#prevBtn,
+#nextBtn{
 border: none;
 padding: 10px 20px;
 margin: 0 10px;
