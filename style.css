@@ -1,7 +1,6 @@
 * {
 box-sizing: border-box;
 }
-
 body {
 direction: rtl;
 text-align: right;
@@ -9,7 +8,6 @@ font-family: 'Tahoma', sans-serif;
 background-color: #f4f4f4;
 margin: 0;
 }
-
 /* dark mode */
 .dark-mode{
 position: relative;
@@ -56,7 +54,6 @@ position: relative;
 .dark * {
     color: #ccc !important;
 }
-
 .section-top{
     display: flex;
 }
@@ -97,14 +94,11 @@ position: relative;
 display: flex;
 justify-content: space-between;
 }
-
-
 .title-logo {
 display: flex;
 justify-content: center;
 align-items: center;
 }
-
 .login {
 display: flex;
 align-items: center;
@@ -119,7 +113,6 @@ margin: 20px auto;
 gap: 10px;
 border: none;
 }
-
 .search-bar input {
 padding: 10px 16px;
 width: 390px;
@@ -127,9 +120,7 @@ border-radius: 8px;
 border: 1px solid #ccc;
 font-size: 16px;
 font-family: inherit;
-
 }
-
 .search-bar button {
 padding: 10px 16px;
 border: none;
@@ -141,7 +132,6 @@ cursor: pointer;
 }
 .search-bar button:hover{
 background-color: #2b67c9;
-
 }
 
 /* icons */
@@ -151,7 +141,6 @@ gap: 35px;
 justify-content: center;
 margin: 2rem;
 }
-
 .icon {
 width: 35px;
 cursor: pointer;
@@ -170,7 +159,6 @@ align-items: center;
 cursor: pointer;
 transition: transform 2s ease, color 2s ease;
 }
-
 .button-login:hover {
 background-color: #60a5fa;
 transform: scale(1.2);
@@ -186,13 +174,11 @@ align-items: center;
 gap: 96px;
 list-style: none;
 }
-
 .nav li a:hover {
 transform: scale(1.2);
 text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 font-weight: bold;
 }
-
 .nav li a {
 display: inline-block;
 text-decoration: none;
@@ -215,7 +201,6 @@ pointer-events: none;
 opacity: 0;
 transition: opacity 0.2s ease;
 z-index: 1000;
-
 transition: opacity 1s ease, transform 1s ease;
 transform: scale(1);
 }
@@ -239,38 +224,32 @@ width: 50%;
 width: 100%;
 position: relative;
 }
-
 .prev,
 .next {
 position: absolute;
 cursor: pointer;
 top: 509px;
 }
-
 .next {
 right: 375px;
 width: 37px;
 }
-
 .prev {
 width: 37px;
 left: 373px;
 }
-
 /* ///////////////////////////////////////////////////////////// */
 /* MAIN */
 .main {
 max-width: 50%;
 margin: 5rem auto;
 }
-
 .flex {
 display: flex;
 gap: 20px;
 flex-wrap: wrap; /* اگر کارت‌ها زیاد بودند به سطر بعد بروند */
 justify-content: center; /* وسط چین کردن کارت‌ها */
 }
-
 .card {
 border-radius: 10px;
 text-align: center;
@@ -286,7 +265,6 @@ width: 100%;
 max-width: 100%;
 height: auto;
 }
-
 .text {
 font-size: 18px;
 color: blue;
@@ -352,18 +330,15 @@ align-items: center;
 z-index: 999;
 flex-direction: column;
 }
-
 .modal-img {
 width: 450px;
 height: 400px;
 border-radius: 10px;
 box-shadow: 0 0 10px black;
 }
-
 .modal-nav {
 margin-top: 20px;
 }
-
 #prevBtn,
 #nextBtn{
 border: none;
@@ -373,7 +348,6 @@ font-size: 20px;
 cursor: pointer;
 border-radius: 5px;
 }
-
 .close {
 position: absolute;
 top: 20px;
@@ -382,7 +356,6 @@ font-size: 40px;
 color: white;
 cursor: pointer;
 }
-
 .hidden {
 display: none;
 }
@@ -397,29 +370,24 @@ display: none;
   font-size: 14px;
   position: relative;
 }
-
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-
 .footer .socials a {
   margin: 0 8px;
 }
-
 .footer .socials img {
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
   transition: transform 0.2s ease;
 }
-
 .footer .socials img:hover {
   transform: scale(1.2);
 }
-
 .back-to-top {
   padding: 10px 20px;
   background-color: #444;
@@ -429,7 +397,6 @@ display: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .back-to-top:hover {
   background-color: #666;
 }

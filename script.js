@@ -91,16 +91,6 @@ document.getElementById('backToTop').addEventListener('click', function () {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
 /* tooltip for icons */
 
 const tooltip = document.getElementById("tooltip");
@@ -152,7 +142,6 @@ nextElem.addEventListener('click', next)
 prevElem.addEventListener('click', prev)
 setInterval(next, 3000)
 
-
 // modal
 
 const modal = document.getElementById('modal');
@@ -194,4 +183,3 @@ nextBtn.addEventListener('click', () => {
 function showModalImage() {
     modalImg.src = currentImages[currentIndex];
 }
-
