@@ -67,6 +67,32 @@ function changeNumber(input) {
     return outPut
 }
 
+// Going from icon to gallery
+
+document.querySelectorAll('.icon').forEach(icon => {
+  icon.addEventListener('click', function () {
+    const targetId = this.dataset.target;
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// top Bottom
+
+document.getElementById('backToTop').addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+
 
 
 

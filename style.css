@@ -32,7 +32,7 @@ position: relative;
     top: 7px;
 }
 .change-dark-mode{
-    background-color: #383636;
+    background-color: #3b82f6;
     border-radius: 100%;
     position: absolute;
     width: 30px;
@@ -62,17 +62,15 @@ position: relative;
 }
 
 /* time && date */
-.time-date{
-    /* position: relative; */
-}
+
 #time,
 #date{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     position: absolute;
 }
 #date{
-    right: 487px;
+    right: 550px;
 }
 #time{
     right: 600px;
@@ -129,6 +127,7 @@ border-radius: 8px;
 border: 1px solid #ccc;
 font-size: 16px;
 font-family: inherit;
+
 }
 
 .search-bar button {
@@ -388,3 +387,49 @@ cursor: pointer;
 display: none;
 }
 
+/* footer */
+
+.footer {
+  background-color: #3b82f6;
+  color: #eee;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .socials a {
+  margin: 0 8px;
+}
+
+.footer .socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.footer .socials img:hover {
+  transform: scale(1.2);
+}
+
+.back-to-top {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #666;
+}

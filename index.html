@@ -25,13 +25,6 @@
                 <span id="date"></span>
             </p>
         </div>
-        <!-- brightness-range -->
-        <div class="container-brightness">
-            <div class="brightness">
-                <div class="top">🔆</div>
-                <div class="down">⛭</div>
-            </div>
-        </div>
     </section>
 
 
@@ -58,20 +51,24 @@
 
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="جستجوی عکس...">
+            <input id="input" type="text" placeholder="جستجوی عکس...">
             <button><img src="./icon/search.svg" alt="search" style="width: 20px;"></button>
         </div>
         <div class="icon-container">
-            <img class="icon" src="./icon/car.jpeg" alt="ماشین" data-tooltip=" ماشین">
-            <img class="icon" src="./icon/animal.svg" alt="حیوانات" data-tooltip=" حیوانات">
-            <img class="icon" src="./icon/city.svg" alt="شهر و معماری" data-tooltip=" شهر و معماری">
-            <img class="icon" src="./icon/Design.svg" alt="هنر و طراحی" data-tooltip=" هنری و طراحی">
-            <img class="icon" src="./icon/food.svg" alt="غذا و نوشیدنی" data-tooltip=" غذا و نوشیدنی">
-            <img class="icon" src="./icon/portre.svg" alt="پرتره" data-tooltip=" پرتره">
-            <img class="icon" src="./icon/sky.svg" alt="آسمان" data-tooltip=" آسمان">
-            <img class="icon" src="./icon/tecnology.svg" alt="تکنولوژی" data-tooltip=" تکنولوژی">
-            <img class="icon" src="./icon/tower.svg" alt="مکان های دیدن" data-tooltip=" اماکن دیدنی">
-            <img class="icon" src="./icon/tree.svg" alt="طبیعت" data-tooltip=" طبیعت">
+            <img class="icon" src="./icon/car.jpeg" alt="ماشین" data-tooltip=" ماشین" data-target="car">
+            <img class="icon" src="./icon/animal.svg" alt="حیوانات" data-tooltip=" حیوانات" data-target="animal">
+            <img class="icon" src="./icon/city.svg" alt="شهر و معماری" data-tooltip=" شهر و معماری" data-target="city">
+            <img class="icon" src="./icon/Design.svg" alt="هنر و طراحی" data-tooltip=" هنری و طراحی"
+                data-target="Design">
+            <img class="icon" src="./icon/food.svg" alt="غذا و نوشیدنی" data-tooltip=" غذا و نوشیدنی"
+                data-target="food">
+            <img class="icon" src="./icon/portre.svg" alt="پرتره" data-tooltip=" پرتره" data-target="Portrait">
+            <img class="icon" src="./icon/sky.svg" alt="آسمان" data-tooltip=" آسمان" data-target="sky">
+            <img class="icon" src="./icon/tecnology.svg" alt="تکنولوژی" data-tooltip=" تکنولوژی"
+                data-target="tecnology">
+            <img class="icon" src="./icon/tower.svg" alt="مکان های دیدن" data-tooltip=" اماکن دیدنی"
+                data-target="Places">
+            <img class="icon" src="./icon/tree.svg" alt="طبیعت" data-tooltip=" طبیعت" data-target="Nature">
 
             <div id="tooltip" class="tooltip"></div>
 
@@ -89,7 +86,7 @@
     <main class="main">
 
         <div class="flex">
-            <div class="card animal">
+            <div id="animal" class="card animal">
                 <p class="text">حیوانات</p>
                 <div class="images" style="display: none; ">
                     <img src="./image/gallery/animals/1.jpg " alt="">
@@ -105,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="card car">
+            <div id="car" class="card car">
                 <p class="text">ماشین</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/car/1.jpg" alt="">
@@ -120,7 +117,7 @@
                     <img src="./image/gallery/car/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card Architecture">
+            <div id="city" class="card Architecture">
                 <p class="text">شهرومعماری</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Architecture/1.jpg" alt="">
@@ -135,7 +132,7 @@
                     <img src="./image/gallery/Architecture/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card Design">
+            <div id="design" class="card Design">
                 <p class="text">طراحی </p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Design/1.jpg" alt="">
@@ -150,7 +147,7 @@
                     <img src="./image/gallery/Design/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card food">
+            <div id="food" class="card food">
                 <p class="text">غذا ونوشیدنی</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Food&drink/1.jpg" alt="">
@@ -165,7 +162,7 @@
                     <img src="./image/gallery/Food&drink/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card Portrait">
+            <div id="Portrait" class="card Portrait">
                 <p class="text">پرتره</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Portrait/1.jpg" alt="">
@@ -180,7 +177,7 @@
                     <img src="./image/gallery/Portrait/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card sky">
+            <div id="sky" class="card sky">
                 <p class="text">آسمان</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/sky/1.jpg" alt="">
@@ -195,7 +192,7 @@
                     <img src="./image/gallery/sky/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card Technology">
+            <div id="tecnology" class="card Technology">
                 <p class="text">تکنولوژی</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Technology/1.jpeg" alt="">
@@ -210,7 +207,7 @@
                     <img src="./image/gallery/Technology/10.webp" alt="">
                 </div>
             </div>
-            <div class="card Places">
+            <div id="Places" class="card Places">
                 <p class="text">اماکن دیدنی</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Places/1.webp" alt="">
@@ -225,7 +222,7 @@
                     <img src="./image/gallery/Places/10.jpg" alt="">
                 </div>
             </div>
-            <div class="card Nature">
+            <div id="Nature" class="card Nature">
                 <p class="text">طبیعت</p>
                 <div class="images" style="display: none;">
                     <img src="./image/gallery/Nature/1.jpg" alt="">
@@ -253,6 +250,22 @@
         </div>
 
     </main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 گالری تصاویر | ساخته شده باhtml , css , js  توسط محمدمهدی مشایخی</p>
+
+    <div class="socials">
+      <a href="#"><img src="./icon/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
+      <a href="#"><img src="./icon/github-142-svgrepo-com.svg" alt="GitHub"></a>
+      <a href="#"><img src="./icon/email-svgrepo-com.svg" alt="Email"></a>
+    </div>
+
+    <button id="backToTop" class="back-to-top">⬆ برو بالا</button>
+  </div>
+</footer>
+
+
 
     <script src="./script.js"></script>
 </body>
