@@ -76,28 +76,71 @@ document.querySelectorAll('.icon').forEach(icon => {
         if (targetElement) {
             targetElement.scrollIntoView({
                 behavior: 'smooth',
-                block: 'center'  
+                block: 'center'
             });
             // active && dimmed
-             document.querySelectorAll('.card').forEach(icon =>{
-                console.log(icon);
+            document.querySelectorAll('.card').forEach(icon => {
                 icon.classList.remove('active')
                 icon.classList.add('dimmed')
             })
             targetElement.classList.remove('dimmed')
             targetElement.classList.add('active')
+        }
+    });
+});
+
+// Going from search to gallery
+const keyword = {
+    'حیوانات': "animal",
+    "ماشین": "car",
+    "شهر": "city",
+    "طراحی": "design",
+    "غذا": "food",
+    "پرتره": "Portrait",
+    "آسمان": "sky",
+    "تکنولوژي": "tecnology",
+    "مکان های دیدنی": "Places",
+    "طبیعت": "Nature"
+}
+
+function searchBox() {
+
+    let inputValue = input.value.trim().toLowerCase();
+    if (!inputValue) return;
+    // check persian or english
+    const isPersian = keyword[inputValue] !== undefined;
+    const targetId = isPersian ? keyword[inputValue] : inputValue;
+
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+        document.querySelectorAll('.card').forEach(icon => {
+
+            icon.classList.remove('active')
+            icon.classList.add('dimmed')
+        })
+        targetElement.classList.remove('dimmed')
+        targetElement.classList.add('active')
+    } else {
+        alert('ورودی نامعتبر است')
     }
-  });
-});
+    input.value = ''
+}
 
-// top Bottom
+let search = document.querySelector('.search-button');
+let input = document.querySelector('#input')
 
-document.getElementById('backToTop').addEventListener('click', function () {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
+search.addEventListener('click', searchBox)
+input.addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
+        searchBox()
+
+    }
+})
+
 
 /* tooltip for icons */
 
@@ -187,3 +230,12 @@ nextBtn.addEventListener('click', () => {
 function showModalImage() {
     modalImg.src = currentImages[currentIndex];
 }
+
+//  Bottom to top
+
+document.getElementById('backToTop').addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
