@@ -70,14 +70,22 @@ function changeNumber(input) {
 // Going from icon to gallery
 
 document.querySelectorAll('.icon').forEach(icon => {
-  icon.addEventListener('click', function () {
-    const targetId = this.dataset.target;
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+    icon.addEventListener('click', function () {
+        const targetId = this.dataset.target;
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'  
+            });
+            // active && dimmed
+             document.querySelectorAll('.card').forEach(icon =>{
+                console.log(icon);
+                icon.classList.remove('active')
+                icon.classList.add('dimmed')
+            })
+            targetElement.classList.remove('dimmed')
+            targetElement.classList.add('active')
     }
   });
 });
@@ -94,7 +102,6 @@ document.getElementById('backToTop').addEventListener('click', function () {
 /* tooltip for icons */
 
 const tooltip = document.getElementById("tooltip");
-
 document.querySelectorAll(".icon").forEach(icon => {
     icon.addEventListener("mouseenter", () => {
         const text = icon.getAttribute("data-tooltip");
@@ -119,9 +126,7 @@ document.querySelectorAll(".icon").forEach(icon => {
 let img = document.querySelector('.img-slider')
 let nextElem = document.querySelector('.next')
 let prevElem = document.querySelector('.prev')
-
 let arraySlider = ["image/slider/1.png", "image/slider/2.jpg", "image/slider/3.jpeg", "image/slider/4.webp", "image/slider/5.jpg", "image/slider/6.jpg", "image/slider/7.jpg", "image/slider/8.jpeg", "image/slider/9.jpg", "image/slider/10.jpg", "image/slider/11.jpg", "image/slider/12.jpg",]
-
 let index = 0;
 function next() {
     index--;
@@ -149,7 +154,6 @@ const modalImg = document.getElementById('modalImg');
 const closeBtn = document.getElementById('closeBtn');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-
 let currentImages = [];
 let currentIndex = 0;
 
