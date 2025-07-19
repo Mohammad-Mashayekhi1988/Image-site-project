@@ -67,6 +67,13 @@ function changeNumber(input) {
     return outPut
 }
 
+//menu hamburger
+let hamburger = document.querySelector('.hamburger')
+let nav = document.querySelector('.nav-menu')
+hamburger.addEventListener('click',()=>{
+    nav.classList.toggle('active')
+})
+
 // Going from icon to gallery
 
 document.querySelectorAll('.icon').forEach(icon => {
@@ -140,7 +147,6 @@ input.addEventListener('keydown', (event) => {
 
     }
 })
-
 
 /* tooltip for icons */
 
@@ -232,7 +238,6 @@ function showModalImage() {
 }
 
 //  Bottom to top
-
 document.getElementById('backToTop').addEventListener('click', function () {
     window.scrollTo({
         top: 0,

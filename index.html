@@ -7,13 +7,14 @@
     <title>فوتوپلاس</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <section class="section-top">
         <!-- darkMode -->
         <div class="dark-mode">
             <div class="change-dark-mode"></div>
-            <div class="moon" style="width: 100px;">🌛</div>
             <div class="sun">🌞</div>
+            <div class="moon">🌛</div>
         </div>
         <!-- time & Date -->
         <div class="time-date">
@@ -23,6 +24,9 @@
                 <span id="date"></span>
             </p>
         </div>
+        <div class="login">
+            <button class="button-login"> <img class="icon-login" src="./icon/login.svg" alt="">log in</button>
+        </div>
     </section>
 
     <header>
@@ -31,14 +35,23 @@
                 <img class="logo" src="./image/logo.png" alt="logo">
                 <h1>فوتوپلاس</h1>
             </div>
-            <ul class="nav">
-                <li><a href="#contact">صفحه اصلی</a></li>
-                <li><a href="#gallery">گالری</a></li>
-                <li><a href="#about">درباره ما</a></li>
-                <li><a href="#contact">تماس با ما</a></li>
-            </ul>
-            <div class="login">
-                <button class="button-login"> <img class="icon-login" src="./icon/login.svg" alt="">log in</button>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="#contact">صفحه اصلی</a></li>
+                    <li><a href="#gallery">گالری</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">☰</div>
+
+                <ul class="nav-menu">
+                    <li><a href="#contact">صفحه اصلی</a></li>
+                    <li><a href="#gallery">گالری</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+
             </div>
         </div>
         <div class="search-bar">
@@ -237,18 +250,19 @@
         </div>
     </main>
 
-<footer class="footer">
-  <div class="footer-content">
-    <p>© 2025 گالری تصاویر | ساخته شده باhtml , css , js  توسط محمدمهدی مشایخی</p>
-    <div class="socials">
-      <a href="#"><img src="./icon/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
-      <a href="#"><img src="./icon/github-142-svgrepo-com.svg" alt="GitHub"></a>
-      <a href="#"><img src="./icon/email-svgrepo-com.svg" alt="Email"></a>
-    </div>
-    <button id="backToTop" class="back-to-top">⬆ برو بالا</button>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 گالری تصاویر | ساخته شده باhtml , css , js توسط محمدمهدی مشایخی</p>
+            <div class="socials">
+                <a href="#"><img src="./icon/instagram-167-svgrepo-com.svg" alt="Instagram"></a>
+                <a href="#"><img src="./icon/github-142-svgrepo-com.svg" alt="GitHub"></a>
+                <a href="#"><img src="./icon/email-svgrepo-com.svg" alt="Email"></a>
+            </div>
+            <button id="backToTop" class="back-to-top">⬆ برو بالا</button>
+        </div>
+    </footer>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
