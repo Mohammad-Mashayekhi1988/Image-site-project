@@ -79,6 +79,7 @@ hamburger.addEventListener('click',()=>{
 document.querySelectorAll('.icon').forEach(icon => {
     icon.addEventListener('click', function () {
         const targetId = this.dataset.target;
+        console.log(targetId);
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
             targetElement.scrollIntoView({

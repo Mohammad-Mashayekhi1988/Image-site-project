@@ -46,6 +46,8 @@ body {
 /* dark mode */
 
 .dark-mode {
+  height: 40px;
+  width: 74px;
   background-color: #3b82f6;
   position: absolute;
   top: 50%;
@@ -54,11 +56,12 @@ body {
   display: flex;
   align-items: center;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .moon,
 .sun {
-  font-size: 24px;
+  font-size: 29px;
   cursor: pointer;
 }
 
@@ -66,8 +69,8 @@ body {
   background-color: #3b82f6;
   border-radius: 100%;
   position: absolute;
-  width: 30px;
-  height: 26px;
+  width: 35px;
+  height: 37px;
   top: 1px;
   z-index: 2;
 }
@@ -76,8 +79,8 @@ body {
   background-color: #3b82f6;
   border-radius: 100%;
   position: absolute;
-  width: 30px;
-  height: 26px;
+  width: 35px;
+  height: 37px;
   top: 1px;
   z-index: 2;
   left: 0px;
@@ -173,9 +176,10 @@ body {
 
 .button-login {
   position: absolute;
-  left: 10px;
+  padding: 4px;
+  left: -25px;
   margin-left: 2rem;
-  width: 70px;
+  width: 74px;
   height: 40px;
   border: none;
   border-radius: 0.5rem;
@@ -378,7 +382,7 @@ body {
   background-image: url('./image/gallery/Architecture/2.jpeg');
 }
 
-.Design {
+.design {
   background-image: url('./image/gallery/Design/10.jpg');
 }
 
@@ -508,6 +512,7 @@ body {
   body {
     font-size: 40px;
   }
+
   /* darkmode */
   .dark-mode {
     width: 200px;
@@ -539,6 +544,7 @@ body {
     background-color: #3b82f6;
     top: 10px;
   }
+
   /* title & logo */
   .title-logo {
     width: 300px;
@@ -549,6 +555,7 @@ body {
     width: 300px;
     margin-right: 158px;
   }
+
   /* button login */
   .button-login {
     width: 200px;
@@ -561,6 +568,7 @@ body {
   .icon-login {
     width: 50px;
   }
+
   /* time && date */
   .section-top {
     height: 54vh;
@@ -570,6 +578,7 @@ body {
   #date {
     font-size: 80px;
   }
+
   /* search bar */
   .search-bar input {
     width: 850px;
@@ -579,10 +588,12 @@ body {
   .button-search {
     width: 58px;
   }
+
   /* icons */
   .icon {
     width: 123px;
   }
+
   /* slider */
   .slider-item {
     width: 80%;
@@ -601,12 +612,14 @@ body {
     width: 100px;
     left: 84%;
   }
+
   /* cards */
   .card {
     width: 630px;
     height: 551px;
     margin-bottom: 30px;
   }
+
   /* modal */
   .close {
     font-size: 100px;
@@ -616,11 +629,13 @@ body {
   #nextBtn {
     font-size: 80px;
   }
+
   /* label cards */
   .text {
     font-size: 55px;
     margin-top: 500px;
   }
+
   /* footer */
   .footer {
     font-size: 56px;
@@ -646,35 +661,40 @@ body {
   .nav {
     display: none;
   }
+
   .hamburger {
     display: block;
   }
+
   .nav-menu.active {
     display: flex;
     border: none;
     transform: translateX(0);
   }
 }
+
 @media (width <=542px) {
-  .nav-menu{
-  position: fixed;
-  top: 0;
-  left: 40px;
-  height: 70%;
-  width: 120px;
-  background-color: #3b82f6;
-  transform: translateX(-140%);
-  transition: transform 0.9s ease;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  list-style: none;
-  border-radius: 10px;
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 40px;
+    height: 70%;
+    width: 120px;
+    background-color: #3b82f6;
+    transform: translateX(-140%);
+    transition: transform 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    list-style: none;
+    border-radius: 10px;
   }
-  .time-date{
+
+  .time-date {
     display: none;
   }
-  .slaider{
+
+  .slaider {
     display: none;
   }
 }
